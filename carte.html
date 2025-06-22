@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6b12d3f73c254d052880b674e7afc9df {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6b12d3f73c254d052880b674e7afc9df" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6b12d3f73c254d052880b674e7afc9df = L.map(
+                "map_6b12d3f73c254d052880b674e7afc9df",
+                {
+                    center: [48.896676, 2.229307],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_76a6a7e2d13e90946f49087f6687b612 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_76a6a7e2d13e90946f49087f6687b612.addTo(map_6b12d3f73c254d052880b674e7afc9df);
+        
+    
+            var polygon_9600e735c9b7be3ce947062472e41506 = L.polygon(
+                [[48.89581, 2.16935], [48.89907, 2.17429], [48.90035, 2.17652], [48.90278, 2.1836], [48.9048, 2.19267], [48.90697, 2.1965], [48.90868, 2.20059], [48.91093, 2.20615], [48.9143, 2.21163], [48.91711, 2.21501], [48.92062, 2.2204], [48.91799, 2.22415], [48.91649, 2.22211], [48.91207, 2.22664], [48.90834, 2.22915], [48.90792, 2.22794], [48.90602, 2.2291], [48.90094, 2.23189], [48.90065, 2.23162], [48.90034, 2.23057], [48.89568, 2.23379], [48.89505, 2.23426], [48.89253, 2.23113], [48.89104, 2.22995], [48.88964, 2.2307], [48.88544, 2.2245], [48.88314, 2.22245], [48.88277, 2.22361], [48.87813, 2.21644], [48.87679, 2.21661], [48.87643, 2.21314], [48.87728, 2.21165], [48.87553, 2.2101], [48.87423, 2.20776], [48.87995, 2.19926], [48.88754, 2.18578], [48.8903, 2.18024], [48.89194, 2.17623]],
+                {"bubblingMouseEvents": true, "color": "#F55906", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F55906", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_6b12d3f73c254d052880b674e7afc9df);
+        
+    
+        var popup_0df4f39f26a2795433ccebc11dc7313d = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_93e2bbabb3caeda0cc35dbadd7015108 = $(`<div id="html_93e2bbabb3caeda0cc35dbadd7015108" style="width: 100.0%; height: 100.0%;">Nanterre : 5845.59 €/m²</div>`)[0];
+                popup_0df4f39f26a2795433ccebc11dc7313d.setContent(html_93e2bbabb3caeda0cc35dbadd7015108);
+            
+        
+
+        polygon_9600e735c9b7be3ce947062472e41506.bindPopup(popup_0df4f39f26a2795433ccebc11dc7313d)
+        ;
+
+        
+    
+    
+            var polygon_019aa885f2b3b299005b0179d5e52f5c = L.polygon(
+                [[48.88061, 2.15831], [48.88337, 2.14493], [48.88611, 2.14598], [48.88823, 2.14787], [48.88895, 2.1439], [48.89245, 2.14354], [48.89121, 2.15003], [48.89322, 2.14863], [48.89264, 2.14523], [48.90306, 2.13853], [48.90956, 2.13379], [48.90597, 2.13129], [48.90766, 2.12595], [48.91212, 2.13214], [48.91074, 2.14027], [48.90944, 2.13952], [48.9036, 2.14302], [48.90298, 2.14378], [48.90459, 2.14692], [48.9048, 2.15271], [48.90625, 2.15574], [48.90605, 2.15666], [48.90799, 2.16136], [48.90486, 2.166], [48.90247, 2.16853], [48.89907, 2.17429], [48.89581, 2.16935], [48.89442, 2.16779], [48.89208, 2.16665], [48.88844, 2.16333], [48.88642, 2.16299], [48.88318, 2.16348], [48.88188, 2.16185]],
+                {"bubblingMouseEvents": true, "color": "#F55906", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F55906", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_6b12d3f73c254d052880b674e7afc9df);
+        
+    
+        var popup_241190aeb366b94d84eb72e57f06d24a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_0bd8dbe3c931b5c572cf1c5cc6682f09 = $(`<div id="html_0bd8dbe3c931b5c572cf1c5cc6682f09" style="width: 100.0%; height: 100.0%;">Chatou : 5786.92 €/m²</div>`)[0];
+                popup_241190aeb366b94d84eb72e57f06d24a.setContent(html_0bd8dbe3c931b5c572cf1c5cc6682f09);
+            
+        
+
+        polygon_019aa885f2b3b299005b0179d5e52f5c.bindPopup(popup_241190aeb366b94d84eb72e57f06d24a)
+        ;
+
+        
+    
+    
+            var polygon_6eba81235eb5ae970a323cc95d504493 = L.polygon(
+                [[48.90799, 2.16136], [48.90914, 2.15982], [48.91031, 2.16295], [48.91398, 2.15847], [48.91686, 2.1631], [48.91923, 2.15975], [48.92027, 2.16084], [48.9227, 2.16588], [48.92572, 2.16676], [48.92658, 2.16792], [48.91984, 2.17359], [48.91603, 2.17777], [48.91733, 2.182], [48.91846, 2.18684], [48.91738, 2.18759], [48.91815, 2.19168], [48.9164, 2.19319], [48.91704, 2.19563], [48.91897, 2.19919], [48.91825, 2.20048], [48.91439, 2.2037], [48.912, 2.19825], [48.90868, 2.20059], [48.90697, 2.1965], [48.9048, 2.19267], [48.90278, 2.1836], [48.90035, 2.17652], [48.89907, 2.17429], [48.90247, 2.16853], [48.90486, 2.166]],
+                {"bubblingMouseEvents": true, "color": "#F55906", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F55906", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_6b12d3f73c254d052880b674e7afc9df);
+        
+    
+        var popup_13c52c1204994cb0a9f67fdb9bd50bb7 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b71683c0ad23b6fd4458a76e780b94c2 = $(`<div id="html_b71683c0ad23b6fd4458a76e780b94c2" style="width: 100.0%; height: 100.0%;">Carrières-sur-Seine : 5386.56 €/m²</div>`)[0];
+                popup_13c52c1204994cb0a9f67fdb9bd50bb7.setContent(html_b71683c0ad23b6fd4458a76e780b94c2);
+            
+        
+
+        polygon_6eba81235eb5ae970a323cc95d504493.bindPopup(popup_13c52c1204994cb0a9f67fdb9bd50bb7)
+        ;
+
+        
+    
+    
+            var polygon_aa6a6c952b70cee3cfc8caba7b9bcf83 = L.polygon(
+                [[48.90868, 2.20059], [48.912, 2.19825], [48.91439, 2.2037], [48.91825, 2.20048], [48.91897, 2.19919], [48.92073, 2.20198], [48.92213, 2.20546], [48.92505, 2.20394], [48.92784, 2.20387], [48.93165, 2.201], [48.93525, 2.19893], [48.93606, 2.20077], [48.93772, 2.20146], [48.93778, 2.20282], [48.93985, 2.20268], [48.94066, 2.20609], [48.93944, 2.20692], [48.93886, 2.21032], [48.93796, 2.21046], [48.93698, 2.2164], [48.93572, 2.21722], [48.93479, 2.21955], [48.9346, 2.22187], [48.92925, 2.2255], [48.93015, 2.22802], [48.92773, 2.23114], [48.92062, 2.2204], [48.91711, 2.21501], [48.9143, 2.21163], [48.91093, 2.20615]],
+                {"bubblingMouseEvents": true, "color": "#F55906", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F55906", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_6b12d3f73c254d052880b674e7afc9df);
+        
+    
+        var popup_7502797e73cb6c468761893085b9ffa1 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_d710d7ccb94a233595e3b69a88c44e51 = $(`<div id="html_d710d7ccb94a233595e3b69a88c44e51" style="width: 100.0%; height: 100.0%;">Bezons : 4644.17 €/m²</div>`)[0];
+                popup_7502797e73cb6c468761893085b9ffa1.setContent(html_d710d7ccb94a233595e3b69a88c44e51);
+            
+        
+
+        polygon_aa6a6c952b70cee3cfc8caba7b9bcf83.bindPopup(popup_7502797e73cb6c468761893085b9ffa1)
+        ;
+
+        
+    
+    
+            var polygon_52f0963565ce926a0757d2988b183617 = L.polygon(
+                [[48.91356, 2.25741], [48.91333, 2.25305], [48.91178, 2.2468], [48.9087, 2.23741], [48.90761, 2.23488], [48.90602, 2.2291], [48.90792, 2.22794], [48.90834, 2.22915], [48.91207, 2.22664], [48.91649, 2.22211], [48.91799, 2.22415], [48.92062, 2.2204], [48.92773, 2.23114], [48.9307, 2.23672], [48.9329, 2.24177], [48.93674, 2.2476], [48.93386, 2.2484], [48.93584, 2.25099], [48.93615, 2.25345], [48.9375, 2.25687], [48.93755, 2.25816], [48.93546, 2.26248], [48.93389, 2.27129], [48.93384, 2.27304], [48.92855, 2.27239], [48.92685, 2.27331], [48.92506, 2.26788], [48.92461, 2.26966], [48.9195, 2.26715], [48.92036, 2.26522], [48.92021, 2.26319], [48.91658, 2.26179], [48.91388, 2.26156]],
+                {"bubblingMouseEvents": true, "color": "#F55906", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F55906", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_6b12d3f73c254d052880b674e7afc9df);
+        
+    
+        var popup_21e124bbab3078b098a03326ad06d9c3 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_56c0b63bc446a07cca007c05e152ddaa = $(`<div id="html_56c0b63bc446a07cca007c05e152ddaa" style="width: 100.0%; height: 100.0%;">Colombes : 5923.48 €/m²</div>`)[0];
+                popup_21e124bbab3078b098a03326ad06d9c3.setContent(html_56c0b63bc446a07cca007c05e152ddaa);
+            
+        
+
+        polygon_52f0963565ce926a0757d2988b183617.bindPopup(popup_21e124bbab3078b098a03326ad06d9c3)
+        ;
+
+        
+    
+    
+            var polygon_a56261c1d3a72222595ed56d048858ec = L.polygon(
+                [[48.91356, 2.25741], [48.91095, 2.25704], [48.90607, 2.25822], [48.90537, 2.25578], [48.9045, 2.25584], [48.90202, 2.24647], [48.90299, 2.2457], [48.90277, 2.24259], [48.90065, 2.23162], [48.90094, 2.23189], [48.90602, 2.2291], [48.90761, 2.23488], [48.9087, 2.23741], [48.91178, 2.2468], [48.91333, 2.25305]],
+                {"bubblingMouseEvents": true, "color": "#A90101", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#A90101", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_6b12d3f73c254d052880b674e7afc9df);
+        
+    
+        var popup_fcc53d7acb7449e148bd89686a9eba09 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_443a02e7c87c73710d0dc9c5a60c2e23 = $(`<div id="html_443a02e7c87c73710d0dc9c5a60c2e23" style="width: 100.0%; height: 100.0%;">Garenne-Colombes : 7233.93 €/m²</div>`)[0];
+                popup_fcc53d7acb7449e148bd89686a9eba09.setContent(html_443a02e7c87c73710d0dc9c5a60c2e23);
+            
+        
+
+        polygon_a56261c1d3a72222595ed56d048858ec.bindPopup(popup_fcc53d7acb7449e148bd89686a9eba09)
+        ;
+
+        
+    
+    
+            var polygon_cd57e3371dd1ef54bbebf83f8793b16f = L.polygon(
+                [[48.88689, 2.25376], [48.89088, 2.24117], [48.89514, 2.2405], [48.89465, 2.23789], [48.89568, 2.23379], [48.90034, 2.23057], [48.90065, 2.23162], [48.90277, 2.24259], [48.90299, 2.2457], [48.90202, 2.24647], [48.9045, 2.25584], [48.90537, 2.25578], [48.90607, 2.25822], [48.90682, 2.26137], [48.90339, 2.26326], [48.90461, 2.26702], [48.90629, 2.2664], [48.90597, 2.2682], [48.90828, 2.27431], [48.90643, 2.27623], [48.90364, 2.28013], [48.90462, 2.28185], [48.90228, 2.28427], [48.90157, 2.28256], [48.89975, 2.27495], [48.8984, 2.27107], [48.89718, 2.26792], [48.89485, 2.26334], [48.89095, 2.25894], [48.88854, 2.2554]],
+                {"bubblingMouseEvents": true, "color": "#A90101", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#A90101", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_6b12d3f73c254d052880b674e7afc9df);
+        
+    
+        var popup_3ee909f3a7d0e461edd7d80dae8f2706 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_260f1842de858d68304bbb7e46a08d1e = $(`<div id="html_260f1842de858d68304bbb7e46a08d1e" style="width: 100.0%; height: 100.0%;">Courbevoie : 7112.8 €/m²</div>`)[0];
+                popup_3ee909f3a7d0e461edd7d80dae8f2706.setContent(html_260f1842de858d68304bbb7e46a08d1e);
+            
+        
+
+        polygon_cd57e3371dd1ef54bbebf83f8793b16f.bindPopup(popup_3ee909f3a7d0e461edd7d80dae8f2706)
+        ;
+
+        
+    
+    
+            var polygon_0d95b4f90401e7649a6bbf6426bb667f = L.polygon(
+                [[48.88689, 2.25376], [48.88549, 2.25248], [48.88489, 2.2544], [48.8817, 2.25155], [48.87646, 2.2457], [48.87243, 2.24109], [48.87059, 2.23545], [48.86907, 2.23174], [48.87348, 2.23684], [48.87586, 2.23192], [48.87959, 2.23641], [48.87994, 2.23053], [48.88121, 2.22643], [48.88277, 2.22361], [48.88314, 2.22245], [48.88544, 2.2245], [48.88964, 2.2307], [48.89104, 2.22995], [48.89253, 2.23113], [48.89505, 2.23426], [48.89568, 2.23379], [48.89465, 2.23789], [48.89514, 2.2405], [48.89088, 2.24117]],
+                {"bubblingMouseEvents": true, "color": "#A90101", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#A90101", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_6b12d3f73c254d052880b674e7afc9df);
+        
+    
+        var popup_6c6e97b550d5dac10b2627e849d33db3 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_af26ada215e904e62ad3b95903c1c6e7 = $(`<div id="html_af26ada215e904e62ad3b95903c1c6e7" style="width: 100.0%; height: 100.0%;">Puteaux : 7346.19 €/m²</div>`)[0];
+                popup_6c6e97b550d5dac10b2627e849d33db3.setContent(html_af26ada215e904e62ad3b95903c1c6e7);
+            
+        
+
+        polygon_0d95b4f90401e7649a6bbf6426bb667f.bindPopup(popup_6c6e97b550d5dac10b2627e849d33db3)
+        ;
+
+        
+    
+    
+            var polygon_e646488b6514951ab35d336d15928beb = L.polygon(
+                [[48.86063, 2.20356], [48.86141, 2.19979], [48.86616, 2.2021], [48.86541, 2.20353], [48.86443, 2.20777], [48.86711, 2.20914], [48.8667, 2.2114], [48.86921, 2.21153], [48.87168, 2.2093], [48.8737, 2.2068], [48.87423, 2.20776], [48.87553, 2.2101], [48.87728, 2.21165], [48.87643, 2.21314], [48.87679, 2.21661], [48.87813, 2.21644], [48.88277, 2.22361], [48.88121, 2.22643], [48.87994, 2.23053], [48.87959, 2.23641], [48.87586, 2.23192], [48.87348, 2.23684], [48.86907, 2.23174], [48.86518, 2.22822], [48.85941, 2.22568], [48.85996, 2.2215], [48.8598, 2.21661], [48.85928, 2.21373], [48.86169, 2.21263], [48.86034, 2.20617]],
+                {"bubblingMouseEvents": true, "color": "#A90101", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#A90101", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_6b12d3f73c254d052880b674e7afc9df);
+        
+    
+        var popup_9b9223f4a0678d4995977da9179e9850 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_49718b1ab18102bbd0cd6e26c9c9ddd7 = $(`<div id="html_49718b1ab18102bbd0cd6e26c9c9ddd7" style="width: 100.0%; height: 100.0%;">Suresnes : 7346.85 €/m²</div>`)[0];
+                popup_9b9223f4a0678d4995977da9179e9850.setContent(html_49718b1ab18102bbd0cd6e26c9c9ddd7);
+            
+        
+
+        polygon_e646488b6514951ab35d336d15928beb.bindPopup(popup_9b9223f4a0678d4995977da9179e9850)
+        ;
+
+        
+    
+    
+            var polygon_0a65e6e0d0e59e7cc4cbfd56fccc36e1 = L.polygon(
+                [[48.85476, 2.19786], [48.85613, 2.19427], [48.85207, 2.19034], [48.85253, 2.18732], [48.85157, 2.18262], [48.85166, 2.17669], [48.85021, 2.17377], [48.84973, 2.16935], [48.84855, 2.16479], [48.84772, 2.15987], [48.84929, 2.15915], [48.85278, 2.15436], [48.85619, 2.15076], [48.85801, 2.15032], [48.8591, 2.15155], [48.86057, 2.15117], [48.86378, 2.15495], [48.8644, 2.15376], [48.86607, 2.15447], [48.86891, 2.15725], [48.86963, 2.15714], [48.86828, 2.1523], [48.86847, 2.14848], [48.86933, 2.14796], [48.87086, 2.15039], [48.87334, 2.15287], [48.88061, 2.15831], [48.88188, 2.16185], [48.88318, 2.16348], [48.88642, 2.16299], [48.88844, 2.16333], [48.89208, 2.16665], [48.89442, 2.16779], [48.89581, 2.16935], [48.89194, 2.17623], [48.8903, 2.18024], [48.88754, 2.18578], [48.87995, 2.19926], [48.87423, 2.20776], [48.8737, 2.2068], [48.87168, 2.2093], [48.86921, 2.21153], [48.8667, 2.2114], [48.86711, 2.20914], [48.86443, 2.20777], [48.86541, 2.20353], [48.86616, 2.2021], [48.86141, 2.19979], [48.86063, 2.20356], [48.85751, 2.20183]],
+                {"bubblingMouseEvents": true, "color": "#F55906", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F55906", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_6b12d3f73c254d052880b674e7afc9df);
+        
+    
+        var popup_cc33216d77cafaae50b510a01a637005 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_d535e670ec397d61293e13dbcc5a4e18 = $(`<div id="html_d535e670ec397d61293e13dbcc5a4e18" style="width: 100.0%; height: 100.0%;">Rueil-Malmaison : 6448.42 €/m²</div>`)[0];
+                popup_cc33216d77cafaae50b510a01a637005.setContent(html_d535e670ec397d61293e13dbcc5a4e18);
+            
+        
+
+        polygon_0a65e6e0d0e59e7cc4cbfd56fccc36e1.bindPopup(popup_cc33216d77cafaae50b510a01a637005)
+        ;
+
+        
+    
+</script>
+</html>
